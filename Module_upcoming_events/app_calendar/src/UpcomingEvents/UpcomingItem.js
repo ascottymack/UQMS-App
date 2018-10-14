@@ -32,7 +32,6 @@ class UpcomingItem extends Component {
                             <Text style={style.eventTitleText}>
                                 {this.props.eventName}
                             </Text>
-                            {"\n"}
                             <Text style={style.descriptionText}>
                                 {this.props.eventDescription}
                             </Text>

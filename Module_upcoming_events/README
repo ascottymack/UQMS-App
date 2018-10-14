@@ -1,0 +1,6 @@
+Make sure you change the IP address in app_calendar/src/SiteSettings before you run this.
+
+You need to run two terminal tabs for this to work:
+    cd into app_calendar and run "npm i" then "expo start" to install dependencies & run the app on expo
+    cd into site and run "npm i" then "node main.js" to install dependencies & run the site
+

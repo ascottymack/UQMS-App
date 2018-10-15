@@ -9,7 +9,7 @@ export const COLORS = {
     DarkFontColor: "#3d3d3d",
 };
 
-export const FONTS = { 
-    FontFamily: Platform.OS === "ios" ? "Avenir Next" : "Open Sans",
+export const FONTS = {
+    FontFamily: Platform.OS === "ios" ? "Avenir Next" : "Roboto",
 
 };

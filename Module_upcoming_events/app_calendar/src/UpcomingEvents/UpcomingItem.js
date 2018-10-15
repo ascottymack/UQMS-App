@@ -10,7 +10,7 @@ class UpcomingItem extends Component {
     constructor(props) {
         super(props);
 
-        
+
     }
 
     render() {
@@ -19,12 +19,12 @@ class UpcomingItem extends Component {
             date = moment(this.props.eventMoment).format("DD[\n]MMM");
         } catch (e) {
             console.log(e);
-        }        
-        return(
+        }
+        return (
             <View style={style.mainContainer}>
-                <TouchableHighlight style={style.touchableContainer} 
+                <TouchableHighlight style={style.touchableContainer}
                     onPress={this.props.onPress}>
-                    <View style={{flex: 1, flexDirection: "row"}}>
+                    <View style={{ flex: 1, flexDirection: "row" }}>
                         <View style={style.dateContainer}>
                             <Text style={style.dateText}>{date}</Text>
                         </View>
@@ -32,7 +32,6 @@ class UpcomingItem extends Component {
                             <Text style={style.eventTitleText}>
                                 {this.props.eventName}
                             </Text>
-                            {"\n"}
                             <Text style={style.descriptionText}>
                                 {this.props.eventDescription}
                             </Text>
@@ -54,7 +53,7 @@ UpcomingItem.propTypes = {
 
 const style = StyleSheet.create({
     mainContainer: {
-        margin: 10, 
+        margin: 10,
         flex: 1,
         borderRadius: 10,
     },
@@ -91,7 +90,7 @@ const style = StyleSheet.create({
         fontFamily: FONTS.FontFamily,
         color: COLORS.DarkFontColor,
         fontSize: 20,
-    },  
+    },
     descriptionText: {
         fontFamily: FONTS.FontFamily,
         color: COLORS.DarkFontColor,

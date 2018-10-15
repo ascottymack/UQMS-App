@@ -45,6 +45,15 @@ class EventModal extends Component {
 
 EventModal.propTypes = {
     navigation: PropTypes.object,
+    currentEvent: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            eventName: PropTypes.string.isRequired,
+            eventDescription: PropTypes.string.isRequired,
+            eventLocation: PropTypes.string.isRequired,
+            eventMoment: PropTypes.string.isRequired,
+        })
+    )
 };
 
 const style = StyleSheet.create({

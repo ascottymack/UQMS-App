@@ -5,7 +5,7 @@ export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_FAILURE = "FETCH_FAILURE";
 
 export const VisibilityFilters = {
-    SHOW_ALL:"SHOW_ALL",
+    SHOW_FUTURE:"SHOW_FUTURE",
     SHOW_UPCOMING:"SHOW_UPCOMING",
     SHOW_PAST:"SHOW_PAST",
 };

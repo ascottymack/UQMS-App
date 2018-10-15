@@ -1,22 +1,9 @@
 import { VisibilityFilters, SET_VISIBILITY_FILTER, FETCH_FAILURE, FETCH_SUCCESS, FETCH_BEGIN } from "./actions";
 import { combineReducers } from "redux";
 
-//Initial state of app (currently not used)
-export const initialState = {
-    visibilityFilters: VisibilityFilters.SHOW_ALL,
-    events: [{
-        id: "-1",
-        eventName: "",
-        eventMoment: null,
-        eventDescription: "",
-        eventLocation: "",
-    }],
-    fetching: false,
-};
-
 // TODO: use visibility filters
-function visibilityFilter(state = VisibilityFilters.SHOW_ALL, action) {
-    switch(action) {
+function visibilityFilter(state = VisibilityFilters.SHOW_UPCOMING, action) {
+    switch(action.type) {
     case SET_VISIBILITY_FILTER:
         return action.filter;
     default:

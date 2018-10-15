@@ -88,7 +88,7 @@ DisplayUpcoming.propTypes = {
 
 const style = StyleSheet.create({
     mainContainer: {
-        flex: 4,
+        flex: 8,
         width: "100%",
         backgroundColor: COLORS.BackgroundColor,
     }, 

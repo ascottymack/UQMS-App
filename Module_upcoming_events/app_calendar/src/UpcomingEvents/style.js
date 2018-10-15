@@ -5,6 +5,7 @@ export const COLORS = {
     BodyAccentColor: "slateblue",
     BodyAccentMediumColor: "#cbafff",
     BodyBackgroundColor: "lavender",
+    activeButtonColor: "orange",
     LightFontColor: "#f7f7f7",
     DarkFontColor: "#3d3d3d",
 };
